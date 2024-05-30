@@ -5,12 +5,16 @@
   "scripts": {
     "lint": "tsc --noEmit && eslint src/* --quiet",
     "lint:fix": "eslint src/* --fix --quiet",
+    "compile": "tsc",
+    "build:clean": "rm -rf ./dist",
+    "build": "npm run build:clean && npm run compile",
     "test": "echo \"Error: no test specified\"",
-    "start:dev": "export NODE_ENV=development && nodemon src/app.ts"
+    "start:dev": "export NODE_ENV=development && nodemon src/app.ts",
+    "start": "export NODE_ENV=production && node dist/app.js"
   },
   "dependencies": {
     "@am92/api-logger": "^2.0.4",
-    "@am92/express-utils": "^2.0.6",
+    "@am92/express-utils": "^2.0.10",
     "@am92/node-http": "^2.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
