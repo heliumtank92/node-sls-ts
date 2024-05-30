@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@am92/api-logger':
-    specifier: ^2.0.3
-    version: 2.0.3
+    specifier: ^2.0.4
+    version: 2.0.4
   '@am92/express-utils':
-    specifier: ^2.0.5
-    version: 2.0.5
+    specifier: ^2.0.6
+    version: 2.0.6
   '@am92/node-http':
     specifier: ^2.0.3
     version: 2.0.3
@@ -95,19 +95,19 @@ packages:
       - aws-crt
     dev: false
 
-  /@am92/api-logger@2.0.3:
-    resolution: {integrity: sha512-LLIinOzY2xKTAA8ktUXKLMUm7bnYXf875VYzDQoTUeuNSCpgDgQY7MayCErfjB197GtOuujKDyCSjT+/afeH2g==}
+  /@am92/api-logger@2.0.4:
+    resolution: {integrity: sha512-zGIC2rebgZTTujXExCJalLYwF3Ba/Q6emwgjKIUlyGP3Gcl2mi/X60IRH5lc55/cAIkkUIXL/9u/6qm5LGr0eA==}
     dependencies:
       chalk: 4.1.2
       cls-hooked: 4.2.2
       winston: 3.13.0
     dev: false
 
-  /@am92/express-utils@2.0.5:
-    resolution: {integrity: sha512-UTOeAbOgwPg//HGRpBe6vQFicvYTvUOdM9xE4b7unStQTSB7aquzzB/OCeP+fvA5Wd2uJ+EvAyc2KLaIjaBzrg==}
+  /@am92/express-utils@2.0.6:
+    resolution: {integrity: sha512-PSXQO4W/56uIo7trypaOZUQK+8A5gHC+/WKjz7bcPCHblcq2XAMKWCvyue5ZEspQJ2IsCqZTSggRE1xFNKrYlA==}
     dependencies:
       '@am92/api-crypto': 2.0.3
-      '@am92/api-logger': 2.0.3
+      '@am92/api-logger': 2.0.4
       express-http-context: 1.2.4
       lodash: 4.17.21
     transitivePeerDependencies:
