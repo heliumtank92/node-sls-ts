@@ -1,10 +1,10 @@
 import {
+  ExpsNextFunction,
   ExpsParamsDictionary,
   ExpsRequest,
   ExpsResponse,
   ResponseBody
 } from '@am92/express-utils'
-import { NextFunction } from 'express'
 
 import SampleModel from './Sample.Model'
 
@@ -19,7 +19,7 @@ export default SampleController
 async function getData(
   request: ExpsRequest<ExpsParamsDictionary, GetDataResponse, GetDataRequest>,
   response: ExpsResponse<GetDataResponse>,
-  next: NextFunction
+  next: ExpsNextFunction
 ) {
   const { body } = request
   const data = await SampleModel.getData(body)

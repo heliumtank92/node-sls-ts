@@ -1,6 +1,6 @@
 import { CorsOptions } from 'cors'
 
-import { ServerConfig } from './Types'
+import { ServerConfig } from './Config.Types'
 
 const {
   PORT = '8080',
