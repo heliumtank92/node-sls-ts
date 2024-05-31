@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Node Boilerplate using Express JS. This Boilerplate supports Jose Crypto, Logging Solution & HttpClient by default.",
   "scripts": {
-    "lint": "tsc --noEmit && eslint src/* --quiet",
+    "lint": "npx tsc --noEmit && eslint src/* --quiet",
     "lint:fix": "eslint src/* --fix --quiet",
-    "compile": "tsc",
+    "compile": "npx tsc",
     "build:clean": "rm -rf ./dist",
     "build": "npm run build:clean && npm run compile",
     "test": "echo \"Error: no test specified\"",
