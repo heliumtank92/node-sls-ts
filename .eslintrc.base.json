@@ -1,10 +1,6 @@
 {
   "env": {
-    "browser": true,
-    "es2021": true,
-    "worker": true,
-    "webextensions": true,
-    "serviceworker": true
+    "es2021": true
   },
   "extends": [
     "eslint:recommended",
