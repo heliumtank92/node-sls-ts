@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "npx tsc --noEmit && eslint src/* --quiet",
     "lint:fix": "eslint src/* --fix --quiet",
-    "compile": "npx tsc",
+    "compile": "npx tsc && npx tsc-alias",
     "build:clean": "rm -rf ./dist",
     "build": "npm run build:clean && npm run compile",
     "test": "echo \"Error: no test specified\"",
@@ -40,6 +40,7 @@
     "nodemon": "^3.1.2",
     "prettier": "^3.2.4",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
     "typescript": "^5.3.3"
   },
   "repository": "git@github.com:heliumtank92/node-sls-ts.git",

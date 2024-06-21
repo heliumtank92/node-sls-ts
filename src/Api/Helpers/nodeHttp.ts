@@ -1,17 +1,8 @@
 import { EXPS_CONST, httpContext } from '@am92/express-utils'
-import {
-  NodeHttp,
-  NodeHttpInterceptor,
-  NodeHttpRequestConfig
-} from '@am92/node-http'
-
-const CustomHeaderInterceptor: NodeHttpInterceptor = {
-  request: [customHeaderRequestSuccess, null, { synchronous: true }]
-}
+import { NodeHttp, NodeHttpRequestConfig } from '@am92/node-http'
 
 const nodeHttp = new NodeHttp()
-CustomHeaderInterceptor.request &&
-  nodeHttp.client.interceptors.request.use(...CustomHeaderInterceptor.request)
+nodeHttp.client.interceptors.request.use(customHeaderRequestSuccess)
 
 export default nodeHttp
 
