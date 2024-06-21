@@ -2,6 +2,12 @@
   "name": "node-sls-ts",
   "version": "0.0.1",
   "description": "Node Boilerplate using Express JS. This Boilerplate supports Jose Crypto, Logging Solution & HttpClient by default.",
+  "imports": {
+    "#*": "./*"
+  },
+  "engines": {
+    "node": ">=20.12.2"
+  },
   "scripts": {
     "lint": "npx tsc --noEmit && eslint src/* --quiet",
     "lint:fix": "eslint src/* --fix --quiet",
@@ -13,8 +19,8 @@
     "start": "export NODE_ENV=production && node dist/app.js"
   },
   "dependencies": {
-    "@am92/api-logger": "^2.0.4",
-    "@am92/express-utils": "^2.0.10",
+    "@am92/api-logger": "^2.0.5",
+    "@am92/express-utils": "^2.0.11",
     "@am92/node-http": "^2.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
