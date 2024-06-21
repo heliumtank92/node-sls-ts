@@ -1,5 +1,7 @@
 import { apiLogger } from '@am92/api-logger'
 
+console.log('called')
+
 console.fatal = apiLogger.fatal
 console.error = apiLogger.error
 console.success = apiLogger.success
@@ -21,9 +23,9 @@ global.API_LOGGER_BLACKLIST_KEYS = BLACKLIST_KEYS
 declare global {
   /** @ignore */
   interface Console {
-    fatal(...data: any[]): void
+    fatal?(...data: any[]): void
     error(...data: any[]): void
-    success(...data: any[]): void
+    success?(...data: any[]): void
     httpSuccess(...data: any[]): void
     httpInfo(...data: any[]): void
     httpError(...data: any[]): void

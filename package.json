@@ -2,9 +2,6 @@
   "name": "node-sls-ts",
   "version": "0.0.1",
   "description": "Node Boilerplate using Express JS. This Boilerplate supports Jose Crypto, Logging Solution & HttpClient by default.",
-  "imports": {
-    "#*": "./*"
-  },
   "engines": {
     "node": ">=20.12.2"
   },
@@ -15,7 +12,7 @@
     "build:clean": "rm -rf ./dist",
     "build": "npm run build:clean && npm run compile",
     "test": "echo \"Error: no test specified\"",
-    "start:dev": "export NODE_ENV=development && nodemon src/app.ts",
+    "start:dev": "export NODE_ENV=development && nodemon -x ts-node -r tsconfig-paths/register src/app.ts",
     "start": "export NODE_ENV=production && node dist/app.js"
   },
   "dependencies": {

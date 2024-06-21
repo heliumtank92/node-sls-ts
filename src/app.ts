@@ -1,16 +1,16 @@
-import './Polyfill/loadEnv'
-import './Polyfill/nodeEnv'
-import './Polyfill/apiLogger'
+import '~/Polyfill/loadEnv'
+import '~/Polyfill/nodeEnv'
+import '~/Polyfill/apiLogger'
 
 import { configureApp, ExpsApp } from '@am92/express-utils'
 import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
 
-import Routes from './Api/Routes'
+import SERVER_CONFIG from '~/Config/Server.Config'
+import startServer from '~/startServer'
 
-import SERVER_CONFIG from './Config/Server.Config'
-import startServer from './startServer'
+import Routes from '~/Api/Routes'
 
 const { CORS_OPTIONS, BODY_LIMIT } = SERVER_CONFIG
 const app: ExpsApp = express()

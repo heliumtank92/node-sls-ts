@@ -1,6 +1,6 @@
 import { ExpressUtils, ExpsApp } from '@am92/express-utils'
 
-import SERVER_CONFIG, { SERVICE } from './Config/Server.Config'
+import SERVER_CONFIG, { SERVICE } from '~/Config/Server.Config'
 
 const successLogFunc = console.success || console.info
 
