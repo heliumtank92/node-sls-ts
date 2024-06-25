@@ -43,7 +43,7 @@
     "prettier": "^3.2.4",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.10",
-    "typescript": "^5.3.3"
+    "typescript": "~5.4.5"
   },
   "repository": "git@github.com:heliumtank92/node-sls-ts.git",
   "homepage": "https://github.com/heliumtank92/node-sls-ts#readme",
